@@ -19,25 +19,25 @@ public class WebTables {
         WebElement addButton = driver.findElement(By.id("addNewRecordButton"));
         addButton.click();
 
-        WebElement firstNameField = driver.findElement(By.id("firstName"));
+        WebElement firstNameField = driver.findElement(By.xpath("//*[@id=\"firstName\"]"));
         firstNameField.sendKeys("Sailor");
 
-        WebElement lastNameField = driver.findElement(By.id("lastName"));
+        WebElement lastNameField = driver.findElement(By.xpath("//*[@id=\"lastName\"]"));
         lastNameField.sendKeys("Moon");
 
-        WebElement emailField = driver.findElement(By.id("userEmail"));
+        WebElement emailField = driver.findElement(By.xpath("//*[@id=\"userEmail\"]"));
         emailField.sendKeys("sailor.moon@magic.com");
 
-        WebElement ageField = driver.findElement(By.id("age"));
+        WebElement ageField = driver.findElement(By.xpath("//*[@id=\"age\"]"));
         ageField.sendKeys("23");
 
-        WebElement salaryField = driver.findElement(By.id("salary"));
+        WebElement salaryField = driver.findElement(By.xpath("//*[@id=\"salary\"]"));
         salaryField.sendKeys("60000");
 
-        WebElement departmentField = driver.findElement(By.id("department"));
+        WebElement departmentField = driver.findElement(By.xpath("//*[@id=\"department\"]"));
         departmentField.sendKeys("IT");
 
-        WebElement submitButton = driver.findElement(By.id("submit"));
+        WebElement submitButton = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
         submitButton.click();
 
         WebElement editButton = driver.findElement(By.xpath("//*[@id=\"edit-record-4\"]"));
